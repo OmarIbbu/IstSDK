@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		753886572898FBC10005B08D /* ISTSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 753886562898FBC10005B08D /* ISTSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7538865E2898FBCF0005B08D /* randomGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7538865D2898FBCF0005B08D /* randomGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		753886532898FBC10005B08D /* ISTSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ISTSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		753886562898FBC10005B08D /* ISTSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISTSDK.h; sourceTree = "<group>"; };
+		7538865D2898FBCF0005B08D /* randomGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = randomGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 		753886552898FBC10005B08D /* ISTSDK */ = {
 			isa = PBXGroup;
 			children = (
+				7538865D2898FBCF0005B08D /* randomGenerator.swift */,
 				753886562898FBC10005B08D /* ISTSDK.h */,
 			);
 			path = ISTSDK;
@@ -93,6 +96,7 @@
 				TargetAttributes = {
 					753886522898FBC10005B08D = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -129,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7538865E2898FBCF0005B08D /* randomGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +263,7 @@
 		7538865B2898FBC10005B08D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -278,6 +284,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +293,7 @@
 		7538865C2898FBC10005B08D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
